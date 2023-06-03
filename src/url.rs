@@ -2,7 +2,7 @@ use std::{string::ParseError, str::FromStr, collections::HashMap };
 
 #[derive(Debug, Clone)]
 pub struct Url {
-    value: String,
+    // value: String,
     pub protocol: Protocol,
     pub base_url: String,
     pub host: String,
@@ -82,7 +82,7 @@ impl FromStr for Url {
             base_url: url_string.to_owned(),
             protocol,
             host,
-            value: url_string.to_owned(),
+            // value: url_string.to_owned(),
             routes,
             params
         });
